@@ -1,10 +1,13 @@
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+
+export default function App() {
   return (
-    <main>
-      <h1>RS Assurance Group</h1>
-      <p>Building organisations that stand up to scrutiny.</p>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
