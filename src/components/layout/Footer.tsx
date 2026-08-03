@@ -172,12 +172,13 @@ export default function Footer() {
 
             {/* ACKNOWLEDGEMENT */}
 
-            <div className="text-center">
+          <div className="flex flex-col items-center text-center">
 
-           <p
+<p
   className="
-    mx-auto
+    w-full
     max-w-xs
+    text-center
     text-xs
     font-semibold
     uppercase

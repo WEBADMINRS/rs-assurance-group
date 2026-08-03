@@ -25,10 +25,17 @@ export default function Hero() {
             }}
           >
 
-            <p className="mb-12 text-xs font-semibold uppercase tracking-[0.3em]
-md:tracking-[0.65em]text-[#2E5FA7]">
-              THE DISCIPLINE BEHIND GREAT ORGANISATIONS
-            </p>
+            <p className="
+  mb-12
+  text-xs
+  font-semibold
+  uppercase
+  tracking-[0.25em]
+  text-[#2E5FA7]
+  md:tracking-[0.65em]
+">
+  THE DISCIPLINE BEHIND GREAT ORGANISATIONS
+</p>
 
 
             <h1 className="
@@ -69,7 +76,13 @@ md:tracking-[0.65em]text-[#2E5FA7]">
             </p>
 
 
-            <div className="mt-16 flex gap-5">
+            <div className="
+  mt-16
+  flex
+  flex-col
+  gap-5
+  sm:flex-row
+">
 
               <Button>
                 Book a Consultation
@@ -98,7 +111,8 @@ md:tracking-[0.65em]text-[#2E5FA7]">
             }}
           >
 
-            <div className="rounded-[36px] border border-slate-200 bg-white p-14 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
+            <div className="rounded-[36px] border border-slate-200 bg-white p-6
+md:p-14 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
 
 
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#2E5FA7]">
@@ -185,7 +199,15 @@ md:tracking-[0.65em]text-[#2E5FA7]">
               </div>
 
 
-<div className="mt-16 rounded-3xl bg-[#08142E] px-10 py-8">
+<div className="
+  mt-16
+  rounded-3xl
+  bg-[#08142E]
+  px-6
+  py-6
+  md:px-10
+  md:py-8
+">
 
   <div className="flex items-center gap-6">
 
