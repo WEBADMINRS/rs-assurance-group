@@ -14,7 +14,7 @@ export default function Hero() {
 
       <Container>
 
-        <div className="grid items-start gap-12 lg:gap-20 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-[1.2fr_0.8fr]">
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -125,7 +125,7 @@ export default function Hero() {
           >
 
             <div className="rounded-[36px] border border-slate-200 bg-white p-6
-md:p-14 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
+md:p-10 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
 
 
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#2E5FA7]">
@@ -151,7 +151,7 @@ md:p-14 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
               </h2>
 
 
-              <div className="mt-12">
+              <div className="mt-8">
 
                 {[
   {
@@ -176,7 +176,7 @@ md:p-14 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
   return (
     <div
   key={item.title}
-  className="flex items-center justify-between border-b border-slate-200 py-5 md:py-7"
+  className="flex items-center justify-between border-b border-slate-200 py-4 md:py-5"
 >
 
   <div className="flex items-center gap-8">
