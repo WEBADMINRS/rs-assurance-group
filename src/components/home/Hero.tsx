@@ -10,11 +10,11 @@ import {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFA] pt-40 pb-44">
+    <section className="relative overflow-hidden bg-[#FCFCFA] pt-28 pb-44">
 
       <Container>
 
-        <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-start gap-12 lg:gap-20 lg:grid-cols-[1.2fr_0.8fr]">
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -27,7 +27,7 @@ export default function Hero() {
 
           <p
   className="
-    mb-12
+    mb-8
     text-xs
     font-semibold
     uppercase
