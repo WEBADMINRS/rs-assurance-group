@@ -1,6 +1,7 @@
 import Page from "../components/layout/Page";
 import Reveal from "../components/ui/Reveal";
 import Container from "../components/layout/Container";
+import { Link } from "react-router-dom";
 
 const insights = [
   {
@@ -95,20 +96,27 @@ export default function Insights() {
           </p>
 
 
-          <button className="
-            mt-10
-            rounded-xl
-            bg-white
-            px-8
-            py-4
-            text-xs
-            font-semibold
-            uppercase
-            tracking-[0.2em]
-            text-[#08142E]
-          ">
-            Read Insight →
-          </button>
+<Link
+  to="/insights"
+  className="
+    mt-10
+    inline-flex
+    rounded-xl
+    bg-white
+    px-8
+    py-4
+    text-xs
+    font-semibold
+    uppercase
+    tracking-[0.2em]
+    text-[#08142E]
+    transition
+    duration-300
+    hover:bg-[#D6A03A]
+  "
+>
+  Read Insight →
+</Link>
 
         </div>
       </section>

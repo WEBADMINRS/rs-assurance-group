@@ -1,5 +1,6 @@
 import Page from "../components/layout/Page";
 import Container from "../components/layout/Container";
+import { Link } from "react-router-dom";
 
 const resources = [
   {
@@ -105,7 +106,8 @@ export default function Resources() {
             </p>
 
 
-           <button
+<Link
+  to="/shop"
   className="
     mt-10
     inline-flex
@@ -120,11 +122,12 @@ export default function Resources() {
     tracking-[0.25em]
     text-[#08142E]
     transition
+    duration-300
     hover:bg-[#D6A03A]
   "
 >
   Get Your Free Guide →
-</button>
+</Link>
 
           </div>
 
@@ -296,7 +299,12 @@ export default function Resources() {
           </p>
 
 
-         <button
+<Link
+  to={
+    resource.number === "03"
+      ? "/booking"
+      : "/shop"
+  }
   className="
     mt-8
     inline-flex
@@ -312,12 +320,13 @@ export default function Resources() {
     tracking-[0.25em]
     text-[#08142E]
     transition
+    duration-300
     hover:bg-[#08142E]
     hover:text-white
   "
 >
   {resource.cta} →
-</button>
+</Link>
 
 
         </div>
@@ -390,26 +399,28 @@ export default function Resources() {
           </p>
 
 
-          <button
- className="
-   mt-10
-   inline-flex
-   items-center
-   rounded-full
-   bg-white
-   px-8
-   py-4
-   text-xs
-   font-bold
-   uppercase
-   tracking-[0.25em]
-   text-[#08142E]
-   transition
-   hover:bg-[#D6A03A]
- "
+<Link
+  to="/booking"
+  className="
+    mt-10
+    inline-flex
+    items-center
+    rounded-full
+    bg-white
+    px-8
+    py-4
+    text-xs
+    font-bold
+    uppercase
+    tracking-[0.25em]
+    text-[#08142E]
+    transition
+    duration-300
+    hover:bg-[#D6A03A]
+  "
 >
- Book Consultation →
-</button>
+  Book Consultation →
+</Link>
 
 
   </div>
