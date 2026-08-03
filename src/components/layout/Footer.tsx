@@ -218,20 +218,23 @@ export default function Footer() {
 
           {/* LOWER BAR */}
 
-          <div
-            className="
-              mt-20
-              border-t
-              border-white/10
-              pt-8
-              flex
-              flex-col
-              gap-8
-              md:flex-row
-              md:items-center
-              md:justify-between
-            "
-          >
+<div
+  className="
+    mt-20
+    border-t
+    border-white/10
+    pt-8
+    flex
+    flex-col
+    items-center
+    gap-8
+    text-center
+    md:flex-row
+    md:items-center
+    md:justify-between
+    md:text-left
+  "
+>
 
 
             <p
@@ -256,30 +259,31 @@ export default function Footer() {
 
 
 
-            <div
-              className="
-                flex
-                items-center
-                gap-4
-              "
-            >
+<div
+  className="
+    flex
+    items-center
+    justify-center
+    gap-4
+  "
+>
 
               <img
                 src="/flags/australian.svg"
                 alt="Australian flag"
-                className="h-8 w-auto"
+                className="h-7 w-auto"
               />
 
               <img
                 src="/flags/aboriginal.svg"
                 alt="Aboriginal flag"
-                className="h-8 w-auto"
+                className="h-7 w-auto"
               />
 
               <img
                 src="/flags/torres-strait.svg"
                 alt="Torres Strait Islander flag"
-                className="h-8 w-auto"
+                className="h-7 w-auto"
               />
 
             </div>
