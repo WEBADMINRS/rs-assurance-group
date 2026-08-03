@@ -49,6 +49,7 @@ export default function Founder() {
               translate-y-4
                 mt-12
                 text-4xl
+                md:text-6xl
                 font-black
                 tracking-[-0.07em]
                 leading-none
@@ -130,46 +131,45 @@ support sustainable organisational improvement.
 
 
 
-            <div
+          <div
   className="
     mt-12
     grid
-    grid-cols-1
-    gap-8
+    grid-cols-3
+    gap-2
     border-t
     border-slate-200
     pt-8
-    md:grid-cols-3
   "
 >
 
               <div>
-                <p className="text-[15px] uppercase tracking-[0.5em] text-slate-400">
-                  Focus
-                </p>
-                <p className="mt-3 font-semibold text-[#08142E]">
-                  Advisory
-                </p>
+                <p className="text-xs uppercase tracking-[0.35em] text-slate-400">
+  Focus
+</p>
+<p className="mt-3 text-sm font-semibold leading-5 text-[#08142E]">
+  Advisory
+</p>
               </div>
 
 
               <div>
-                <p className="text-[15px] uppercase tracking-[0.5em] text-slate-400">
-                  Expertise
-                </p>
-                <p className="mt-3 font-semibold text-[#08142E]">
-                  Governance
-                </p>
+               <p className="text-xs uppercase tracking-[0.35em] text-slate-400">
+  Expertise
+</p>
+<p className="mt-3 text-sm font-semibold leading-5 text-[#08142E]">
+  Governance
+</p>
               </div>
 
 
               <div>
-                <p className="text-[15px] uppercase tracking-[0.5em] text-slate-400">
-                  Approach
-                </p>
-                <p className="mt-3 font-semibold text-[#08142E]">
-                  Practical Strategy
-                </p>
+<p className="text-xs uppercase tracking-[0.35em] text-slate-400">
+  Approach
+</p>
+<p className="mt-3 text-sm font-semibold leading-5 text-[#08142E]">
+  Practical Strategy
+</p>
               </div>
 
 
