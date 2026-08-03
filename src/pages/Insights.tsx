@@ -117,7 +117,7 @@ export default function Insights() {
 
           <div className="mt-28 grid gap-16 lg:grid-cols-3">
 
-            {insights.map((item, index) => (
+            {insights.map((item) => (
 
              <article
   key={item.title}
