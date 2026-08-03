@@ -14,7 +14,7 @@ export default function Hero() {
 
       <Container>
 
-        <div className="grid items-center gap-20 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-[1.2fr_0.8fr]">
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -25,15 +25,17 @@ export default function Hero() {
             }}
           >
 
-            <p className="
-  mb-12
-  text-xs
-  font-semibold
-  uppercase
-  tracking-[0.25em]
-  text-[#2E5FA7]
-  md:tracking-[0.65em]
-">
+          <p
+  className="
+    mb-12
+    text-xs
+    font-semibold
+    uppercase
+    tracking-[0.35em]
+    text-[#2E5FA7]
+    md:tracking-[0.65em]
+  "
+>
   THE DISCIPLINE BEHIND GREAT ORGANISATIONS
 </p>
 
@@ -69,7 +71,18 @@ export default function Hero() {
             </h1>
 
 
-            <p className="translate-y-4 mt-12 max-w-[620px] text-lg leading-9 text-slate-600">
+            <p
+  className="
+    translate-y-4
+    mt-10
+    max-w-[620px]
+    text-base
+    leading-8
+    text-slate-600
+    md:text-lg
+    md:leading-9
+  "
+>
               The strongest organisations are built long before they're tested.
               Through disciplined governance, decisive leadership and resilient
               systems, we help organisations build confidence that endures.
@@ -163,18 +176,29 @@ md:p-14 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
   return (
     <div
   key={item.title}
-  className="flex items-center justify-between border-b border-slate-200 py-7"
+  className="flex items-center justify-between border-b border-slate-200 py-5 md:py-7"
 >
 
   <div className="flex items-center gap-8">
 
-    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
+    <div
+className="
+flex
+h-12
+w-12
+items-center
+justify-center
+rounded-2xl
+bg-slate-100
+md:h-16
+md:w-16
+"
+>
 
-      <Icon
-        size={32}
-        strokeWidth={1.8}
-        className="text-[#08142E]"
-      />
+     <Icon
+  size={24}
+  className="text-[#08142E]"
+/>
 
     </div>
 

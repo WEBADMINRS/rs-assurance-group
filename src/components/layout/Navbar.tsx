@@ -192,19 +192,33 @@ md:h-28
             ))}
 
 
-            <Link
-              to="/contact"
-              onClick={() => setOpen(false)}
-              className="
-                text-sm
-                font-semibold
-                uppercase
-                tracking-[0.25em]
-                text-[#08142E]
-              "
-            >
-              Contact →
-            </Link>
+<Link
+  to="/booking"
+  onClick={() => setOpen(false)}
+  className="
+    text-sm
+    font-semibold
+    uppercase
+    tracking-[0.25em]
+    text-[#D6A03A]
+  "
+>
+  Book A Call →
+</Link>
+
+<Link
+  to="/contact"
+  onClick={() => setOpen(false)}
+  className="
+    text-sm
+    font-semibold
+    uppercase
+    tracking-[0.25em]
+    text-[#08142E]
+  "
+>
+  Contact →
+</Link>
 
           </nav>
 

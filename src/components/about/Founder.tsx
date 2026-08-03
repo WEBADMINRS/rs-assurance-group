@@ -48,7 +48,7 @@ export default function Founder() {
               className="
               translate-y-4
                 mt-12
-                text-6xl
+                text-4xl
                 font-black
                 tracking-[-0.07em]
                 leading-none
@@ -131,15 +131,17 @@ support sustainable organisational improvement.
 
 
             <div
-              className="
-                mt-12
-                grid
-                grid-cols-3
-                border-t
-                border-slate-200
-                pt-8
-              "
-            >
+  className="
+    mt-12
+    grid
+    grid-cols-1
+    gap-8
+    border-t
+    border-slate-200
+    pt-8
+    md:grid-cols-3
+  "
+>
 
               <div>
                 <p className="text-[15px] uppercase tracking-[0.5em] text-slate-400">
