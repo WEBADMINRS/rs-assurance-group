@@ -1,23 +1,28 @@
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+
+import Hero from "../components/home/Hero";
+import Philosophy from "../components/about/Philosophy";
+import Services from "../components/home/Services";
+import WhyRS from "../components/home/WhyRS";
+import Industries from "../components/home/Industries";
+import CTA from "../components/home/CTA";
+
 export default function Home() {
   return (
-    <main
-      style={{
-        padding: "80px",
-        fontFamily: "Inter, Arial, sans-serif",
-      }}
-    >
-      <h1>RS Assurance Group</h1>
+    <>
+      <Navbar />
 
-      <p
-        style={{
-          fontSize: "1.3rem",
-          maxWidth: "700px",
-          lineHeight: 1.7,
-          marginTop: "24px",
-        }}
-      >
-        Building organisations that stand up to scrutiny.
-      </p>
-    </main>
+      <main className="overflow-x-hidden bg-white text-[#08142E]">
+        <Hero />
+        <Philosophy />
+        <Services />
+        <WhyRS />
+        <Industries />
+        <CTA />
+      </main>
+
+      <Footer />
+    </>
   );
 }
