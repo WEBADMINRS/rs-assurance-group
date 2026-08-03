@@ -10,7 +10,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#FCFCFA] pt-28 pb-44">
+    <section className="relative overflow-hidden bg-[#FCFCFA] pt-28 pb-24 lg:pb-32">
 
       <Container>
 
