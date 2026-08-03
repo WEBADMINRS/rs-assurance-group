@@ -39,7 +39,17 @@ export default function WhyRS() {
 </p>
 
 
-            <h2 className="mt-24 max-w-4xl text-6xl font-black leading-[0.95] tracking-[-0.07em] md:text-7xl">
+            <h2 className="
+  mt-16
+  max-w-full
+  text-4xl
+  font-black
+  leading-[0.95]
+  tracking-[-0.06em]
+  md:mt-24
+  md:text-6xl
+  lg:text-7xl
+">
 
               We don't prepare
               <br />

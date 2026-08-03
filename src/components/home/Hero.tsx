@@ -25,12 +25,23 @@ export default function Hero() {
             }}
           >
 
-            <p className="mb-12 text-xs font-semibold uppercase tracking-[0.65em] text-[#2E5FA7]">
+            <p className="mb-12 text-xs font-semibold uppercase tracking-[0.3em]
+md:tracking-[0.65em]text-[#2E5FA7]">
               THE DISCIPLINE BEHIND GREAT ORGANISATIONS
             </p>
 
 
-            <h1 className="max-w-[900px] text-[4.8rem] font-black leading-[1.02] tracking-[-0.08em] text-[#08142E] lg:text-[6.8rem]">
+            <h1 className="
+  max-w-full
+  text-5xl
+  font-black
+  leading-[0.95]
+  tracking-[-0.06em]
+  text-[#08142E]
+  md:text-6xl
+  lg:max-w-[900px]
+  lg:text-[6.8rem]
+">
 
               The future
               <br />
@@ -95,7 +106,16 @@ export default function Hero() {
               </p>
 
 
-              <h2 className="translate-y-4 mt-8 text-5xl font-black leading-[0.92] tracking-[-0.07em] text-[#08142E]">
+              <h2 className="
+  translate-y-4
+  mt-8
+  text-4xl
+  font-black
+  leading-[0.95]
+  tracking-[-0.06em]
+  text-[#08142E]
+  md:text-5xl
+">
                 Built before
                 <br />
                 the moment
@@ -171,7 +191,14 @@ export default function Hero() {
 
     <div className="h-14 w-[2px] bg-[#D6A03A]" />
 
-    <p className="whitespace-nowrap text-xl font-medium leading-[1.2] tracking-[-0.02em] text-white">
+    <p className="
+  text-base
+  font-medium
+  leading-[1.3]
+  tracking-[-0.02em]
+  text-white
+  md:text-xl
+">
   Confidence is not claimed.
   <br />
   It is engineered.

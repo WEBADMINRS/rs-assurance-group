@@ -19,7 +19,18 @@ export default function CTA() {
 
 
 
-            <h2 className="mt-24 mb-24 text-6xl font-black leading-[0.95] tracking-[-0.07em] md:text-7xl">
+            <h2 className="
+  mt-16
+  mb-16
+  text-4xl
+  font-black
+  leading-[0.95]
+  tracking-[-0.06em]
+  md:mt-24
+  md:mb-24
+  md:text-6xl
+  lg:text-7xl
+">
 
   Build confidence
   <br />
@@ -40,7 +51,15 @@ export default function CTA() {
 
 
 
-            <div className="mt-16 flex justify-center gap-5">
+            <div className="
+  mt-12
+  flex
+  flex-col
+  justify-center
+  gap-4
+  sm:flex-row
+  sm:gap-5
+">
 
 
               <Button>

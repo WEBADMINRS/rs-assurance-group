@@ -59,7 +59,7 @@ export default function Footer() {
 
             {/* COMPANY */}
 
-            <div className="text-center">
+            <div className="flex flex-col items-center text-center">
 
               <p
                 className="
