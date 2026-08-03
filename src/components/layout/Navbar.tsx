@@ -68,11 +68,12 @@ export default function Navbar() {
         className="
           mx-auto
           flex
-          h-28
+          h-20
+md:h-28
           max-w-[1440px]
           items-center
           justify-between
-          px-6
+          px-5
           md:px-12
           xl:px-20
         "

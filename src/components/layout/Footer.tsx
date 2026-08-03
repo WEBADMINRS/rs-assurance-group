@@ -174,8 +174,9 @@ export default function Footer() {
 
             <div className="text-center">
 
-             <p
+           <p
   className="
+    mx-auto
     max-w-xs
     text-xs
     font-semibold

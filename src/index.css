@@ -49,3 +49,7 @@ button {
   background: #D6A03A;
   color: #08142E;
 }
+html,
+body {
+  overflow-x: hidden;
+}

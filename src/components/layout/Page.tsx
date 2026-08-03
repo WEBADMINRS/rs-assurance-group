@@ -34,7 +34,8 @@ export default function Page({
                   text-sm
                   font-semibold
                   uppercase
-                  tracking-[0.65em]
+                  tracking-[0.35em]
+md:tracking-[0.65em]
                   text-[#2E5FA7]
                 "
               >
@@ -48,11 +49,11 @@ export default function Page({
     translate-y-4
     mt-12
     max-w-[1000px]
-    text-[5rem]
+     text-5xl
     font-black
-    leading-[0.92]
-    tracking-[-0.085em]
-    text-[#08142E]
+    leading-[0.95]
+    tracking-[-0.06em]
+    md:text-6xl
     lg:text-[7rem]
   "
 >
