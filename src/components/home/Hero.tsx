@@ -27,7 +27,7 @@ export default function Hero() {
 
           <p
   className="
-    mb-6 md:mb-8
+    mb-10 md:mb-8
     text-xs
     font-semibold
     uppercase
