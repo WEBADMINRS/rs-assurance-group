@@ -126,15 +126,19 @@ md:h-28
 
 <Link
   to="/booking"
-  className="
-    hidden
-    text-xs
-    font-semibold
-    uppercase
-    tracking-[0.25em]
-    text-[#08142E]
-    md:block
-  "
+className="
+  hidden
+  text-xs
+  font-semibold
+  uppercase
+  tracking-[0.25em]
+  text-[#08142E]
+  transition-all
+  duration-300
+  hover:text-[#D6A03A]
+  hover:-translate-y-0.5
+  md:block
+"
 >
   Book A Call →
 </Link>

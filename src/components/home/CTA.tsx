@@ -68,13 +68,12 @@ export default function CTA() {
 
 
 
-              <Button
-                variant="secondary"
-                to="/contact"
-              >
-                Contact Us
-              </Button>
-
+<Button
+  variant="dark"
+  to="/contact"
+>
+  Contact Us
+</Button>
 
             </div>
 

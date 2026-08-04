@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "dark";
   to?: string;
 }
 
@@ -14,9 +14,9 @@ export default function Button({
 }: ButtonProps) {
 
   const styles = `
-   group
-inline-flex
-items-center
+    group
+    inline-flex
+    items-center
     justify-center
     gap-3
     rounded-xl
@@ -29,6 +29,7 @@ items-center
     transition-all
     duration-300
     hover:-translate-y-1
+
     ${
       variant === "primary"
         ? `
@@ -36,16 +37,32 @@ items-center
           text-white
           hover:bg-[#183A75]
         `
-    : `
-  border
-  border-[#08142E]
-  bg-transparent
-  text-[#08142E]
-  hover:bg-[#08142E]
-  hover:text-white
-`
+        : variant === "dark"
+        ? `
+          border
+          border-white/40
+          bg-transparent
+          text-white
+          hover:border-[#D6A03A]
+          hover:text-[#D6A03A]
+        `
+        : `
+          border
+          border-[#08142E]
+          bg-transparent
+          text-[#08142E]
+          hover:bg-[#08142E]
+          hover:text-white
+        `
     }
   `;
+
+
+  const Arrow = () => (
+    <span className="transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  );
 
 
   if (to) {
@@ -55,11 +72,7 @@ items-center
         className={styles}
       >
         {children}
-
-       <span className="transition-transform duration-300 group-hover:translate-x-1">
-  →
-</span>
-
+        <Arrow />
       </Link>
     );
   }
@@ -70,11 +83,7 @@ items-center
       className={styles}
     >
       {children}
-
-      <span>
-        →
-      </span>
-
+      <Arrow />
     </button>
   );
 }
