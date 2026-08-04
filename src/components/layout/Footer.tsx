@@ -2,6 +2,12 @@ import footerLogoVertical from "../../assets/rs-vertical-footer.png";
 import Container from "./Container";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import {
+  Phone,
+  Mail,
+  MapPin,
+} from "lucide-react";
+
 
 export default function Footer() {
   return (
@@ -34,7 +40,7 @@ export default function Footer() {
   className="
     grid
     gap-16
-    lg:grid-cols-[1.2fr_0.8fr_0.9fr_1.4fr]
+    lg:grid-cols-[1.2fr_0.8fr_0.8fr_1.4fr]
     lg:items-start
   "
 >
@@ -72,6 +78,73 @@ export default function Footer() {
     strategy and operational excellence.
   </p>
 
+</div>
+
+{/* CONTACT */}
+
+<div className="flex flex-col items-center text-center">
+
+  <p
+    className="
+      text-xs
+      font-semibold
+      uppercase
+      tracking-[0.4em]
+      text-[#D6A03A]
+    "
+  >
+    Contact
+  </p>
+
+
+  <div
+  className="
+    mt-8
+    flex
+    w-full
+    max-w-xs
+    flex-col
+    gap-6
+    text-slate-300
+  "
+>
+
+  <div className="flex items-center gap-5">
+    <MapPin
+      size={20}
+      className="shrink-0 text-[#D6A03A]"
+    />
+
+    <span className="text-left">
+      Victoria, Australia
+    </span>
+  </div>
+
+
+  <div className="flex items-center gap-5">
+    <Mail
+      size={20}
+      className="shrink-0 text-[#D6A03A]"
+    />
+
+    <span className="text-left">
+      hello@rsassurancegroup.com.au
+    </span>
+  </div>
+
+
+  <div className="flex items-center gap-5">
+    <Phone
+      size={20}
+      className="shrink-0 text-[#D6A03A]"
+    />
+
+    <span className="text-left">
+      +61 XXX XXX XXX
+    </span>
+  </div>
+
+</div>
 </div>
 
 
@@ -154,39 +227,6 @@ export default function Footer() {
 
 
 
-            {/* EXPERTISE */}
-
-            <div className="text-center">
-
-              <p
-                className="
-                  text-xs
-                  font-semibold
-                  uppercase
-                  tracking-[0.4em]
-                  text-[#D6A03A]
-                "
-              >
-                Expertise
-              </p>
-
-
-              <div
-                className="
-                  mt-8
-                  space-y-5
-                  text-slate-300
-                "
-              >
-                <p>Governance</p>
-                <p>Compliance</p>
-                <p>Audit Readiness</p>
-                <p>Operational Systems</p>
-              </div>
-
-
-            </div>
-
 
 
             {/* ACKNOWLEDGEMENT */}
@@ -196,7 +236,7 @@ export default function Footer() {
 <p
   className="
     w-full
-    max-w-xs
+    max-w-md
     text-center
     text-xs
     font-semibold
@@ -214,7 +254,7 @@ export default function Footer() {
                 className="
                 translate-y-4
                   mt-12
-                  text-base
+                  text-sm md:text-base
                   leading-8
                   text-slate-300
                 "
