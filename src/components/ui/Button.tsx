@@ -34,13 +34,14 @@ export default function Button({
           text-white
           hover:bg-[#183A75]
         `
-        : `
-          border
-          border-white/40
-          bg-transparent
-          text-white
-          hover:border-white
-        `
+    : `
+  border
+  border-[#08142E]
+  bg-transparent
+  text-[#08142E]
+  hover:bg-[#08142E]
+  hover:text-white
+`
     }
   `;
 

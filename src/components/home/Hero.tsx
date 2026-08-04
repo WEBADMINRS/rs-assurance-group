@@ -31,7 +31,7 @@ export default function Hero() {
     text-xs
     font-semibold
     uppercase
-    tracking-[0.35em]
+    tracking-[0.2em]
     text-[#2E5FA7]
     md:tracking-[0.65em]
   "
