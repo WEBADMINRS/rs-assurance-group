@@ -82,17 +82,16 @@ export default function Footer() {
 
 {/* CONTACT */}
 
-<div className="flex flex-col items-center text-center">
+<div className="flex flex-col items-center">
 
   <p
     className="
-      text-[10px]
-font-semibold
-uppercase
-leading-5
-tracking-[0.3em]
-md:text-xs
-md:tracking-[0.4em]
+      text-center
+      text-xs
+      font-semibold
+      uppercase
+      tracking-[0.4em]
+      text-[#D6A03A]
     "
   >
     Contact
@@ -100,60 +99,60 @@ md:tracking-[0.4em]
 
 
   <div
-  className="
-    mt-8
-    flex
-    w-full
-    max-w-xs
-    flex-col
-    gap-4
-    text-slate-300
-  "
->
+    className="
+      mt-8
+      w-full max-w-[280px]
+      flex
+      flex-col
+      gap-5
+      text-slate-300
+    "
+  >
 
-  <div className="flex items-center gap-5">
-    <MapPin
-      size={20}
-      className="shrink-0 text-[#D6A03A]"
-    />
+    <div className="flex items-center gap-5">
+      <MapPin
+        size={20}
+        className="shrink-0 text-[#D6A03A]"
+      />
 
-    <span className="text-left">
-      Victoria, Australia
-    </span>
+      <span>
+        Victoria, Australia
+      </span>
+    </div>
+
+
+    <div className="flex items-center gap-5">
+      <Mail
+        size={20}
+        className="shrink-0 text-[#D6A03A]"
+      />
+
+      <span>
+        hello@rsassurancegroup.com.au
+      </span>
+    </div>
+
+
+    <div className="flex items-center gap-5">
+      <Phone
+        size={20}
+        className="shrink-0 text-[#D6A03A]"
+      />
+
+      <span>
+        +61 XXX XXX XXX
+      </span>
+    </div>
+
   </div>
 
-
-  <div className="flex items-center gap-5">
-    <Mail
-      size={20}
-      className="shrink-0 text-[#D6A03A]"
-    />
-
-    <span className="text-left">
-      hello@rsassurancegroup.com.au
-    </span>
-  </div>
-
-
-  <div className="flex items-center gap-5">
-    <Phone
-      size={20}
-      className="shrink-0 text-[#D6A03A]"
-    />
-
-    <span className="text-left">
-      +61 XXX XXX XXX
-    </span>
-  </div>
-
-</div>
 </div>
 
 
 
             {/* COMPANY */}
 
-            <div className="flex flex-col items-center text-center">
+            <div className="flex w-full flex-col items-center text-center">
 
               <p
                 className="
