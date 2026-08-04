@@ -1,6 +1,7 @@
 import footerLogoVertical from "../../assets/rs-vertical-footer.png";
 import Container from "./Container";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -8,7 +9,25 @@ export default function Footer() {
 
       <Container>
 
-        <div className="py-20 md:py-24">
+        <motion.div
+  initial={{
+    opacity: 0,
+    y: 20,
+  }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+  }}
+  viewport={{
+    once: true,
+    amount: 0.2,
+  }}
+  transition={{
+    duration: 0.8,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+  className="py-20 md:py-24"
+>
 
 
    <div
@@ -292,7 +311,7 @@ export default function Footer() {
           </div>
 
 
-        </div>
+        </motion.div>
 
 
       </Container>

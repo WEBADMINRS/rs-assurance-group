@@ -19,10 +19,10 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.9,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+ transition={{
+  duration: 1,
+  ease: [0.22, 1, 0.36, 1],
+}}
           >
 
           <p
@@ -115,14 +115,21 @@ export default function Hero() {
 
 
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 0.9,
-              delay: 0.15,
-            }}
-          >
+<motion.div
+  initial={{
+    opacity: 0,
+    y: 20,
+  }}
+  animate={{
+    opacity: 1,
+    y: 0,
+  }}
+  transition={{
+    duration: 1,
+    delay: 0.2,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+>
 
             <div className="rounded-[36px] border border-slate-200 bg-white p-6
 md:p-10 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
@@ -174,8 +181,24 @@ md:p-10 shadow-[0_30px_90px_rgba(8,20,46,0.06)]">
   const Icon = item.icon;
 
   return (
-    <div
+   <motion.div
   key={item.title}
+  initial={{
+    opacity: 0,
+    x: -10,
+  }}
+  whileInView={{
+    opacity: 1,
+    x: 0,
+  }}
+  viewport={{
+    once: true,
+    amount: 0.5,
+  }}
+  transition={{
+    duration: 0.5,
+    delay: index * 0.08,
+  }}
   className="flex items-center justify-between border-b border-slate-200 py-4 md:py-5"
 >
 
@@ -214,7 +237,7 @@ md:w-16
                       0{index + 1}
                     </span>
 
-                  </div>
+                                    </motion.div>
 
                   );
 
@@ -223,15 +246,33 @@ md:w-16
               </div>
 
 
-<div className="
-  mt-16
-  rounded-3xl
-  bg-[#08142E]
-  px-6
-  py-6
-  md:px-10
-  md:py-8
-">
+<motion.div
+  initial={{
+    opacity: 0,
+    y: 20,
+  }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+  }}
+  viewport={{
+    once: true,
+    amount: 0.3,
+  }}
+  transition={{
+    duration: 0.8,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+  className="
+    mt-16
+    rounded-3xl
+    bg-[#08142E]
+    px-6
+    py-6
+    md:px-10
+    md:py-8
+  "
+>
 
   <div className="flex items-center gap-6">
 
@@ -252,7 +293,7 @@ md:w-16
 
   </div>
 
-</div>
+</motion.div>
 
 
             </div>

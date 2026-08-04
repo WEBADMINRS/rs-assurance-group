@@ -105,14 +105,16 @@ md:h-28
               key={link.href}
               to={link.href}
               className="
-                text-xs
-                font-semibold
-                uppercase
-                tracking-[0.25em]
-                text-slate-600
-                transition-colors
-                hover:text-[#08142E]
-              "
+  text-xs
+  font-semibold
+  uppercase
+  tracking-[0.25em]
+  text-slate-600
+  transition-all
+  duration-300
+  hover:text-[#08142E]
+  hover:-translate-y-0.5
+"
             >
               {link.label}
             </Link>

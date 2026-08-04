@@ -1,5 +1,6 @@
 import founder from "../../assets/founder.png";
 import Container from "../layout/Container";
+import { motion } from "framer-motion";
 
 export default function Founder() {
   return (
@@ -12,16 +13,32 @@ export default function Founder() {
 
           <div>
 
-            <img
-              src={founder}
-              alt="Rriyan Salvator"
-              className="
-                aspect-[4/5]
-                w-full
-                rounded-[36px]
-                object-cover
-              "
-            />
+<motion.img
+  src={founder}
+  alt="Rriyan Salvator"
+  initial={{
+    opacity: 0,
+    scale: 0.98,
+  }}
+  whileInView={{
+    opacity: 1,
+    scale: 1,
+  }}
+  viewport={{
+    once: true,
+    amount: 0.2,
+  }}
+  transition={{
+    duration: 0.8,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+  className="
+    aspect-[4/5]
+    w-full
+    rounded-[36px]
+    object-cover
+  "
+/>
 
           </div>
 

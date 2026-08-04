@@ -14,8 +14,9 @@ export default function Button({
 }: ButtonProps) {
 
   const styles = `
-    inline-flex
-    items-center
+   group
+inline-flex
+items-center
     justify-center
     gap-3
     rounded-xl
@@ -27,6 +28,7 @@ export default function Button({
     tracking-[0.2em]
     transition-all
     duration-300
+    hover:-translate-y-1
     ${
       variant === "primary"
         ? `
@@ -54,9 +56,9 @@ export default function Button({
       >
         {children}
 
-        <span>
-          →
-        </span>
+       <span className="transition-transform duration-300 group-hover:translate-x-1">
+  →
+</span>
 
       </Link>
     );
