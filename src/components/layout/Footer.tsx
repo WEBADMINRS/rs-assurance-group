@@ -86,11 +86,13 @@ export default function Footer() {
 
   <p
     className="
-      text-xs
-      font-semibold
-      uppercase
-      tracking-[0.4em]
-      text-[#D6A03A]
+      text-[10px]
+font-semibold
+uppercase
+leading-5
+tracking-[0.3em]
+md:text-xs
+md:tracking-[0.4em]
     "
   >
     Contact
@@ -104,7 +106,7 @@ export default function Footer() {
     w-full
     max-w-xs
     flex-col
-    gap-6
+    gap-4
     text-slate-300
   "
 >
@@ -172,7 +174,7 @@ export default function Footer() {
     flex
     flex-col
     items-center
-    gap-0.5
+    gap-2
     text-slate-300
   "
 >
@@ -254,9 +256,11 @@ export default function Footer() {
                 className="
                 translate-y-4
                   mt-12
-                  text-sm md:text-base
-                  leading-8
-                  text-slate-300
+                  text-sm
+leading-7
+text-slate-300
+md:text-base
+md:leading-8
                 "
               >
                 In the spirit of reconciliation, RS Assurance Group
