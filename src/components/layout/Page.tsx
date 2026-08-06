@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Container from "./Container";
 import SiteLayout from "./SiteLayout";
+import Reveal from "../ui/Reveal";
 
 interface PageProps {
   eyebrow: string;
@@ -25,7 +26,7 @@ export default function Page({
 
           <Container>
 
-
+            <Reveal>
             <div>
 
 
@@ -75,8 +76,8 @@ md:tracking-[0.65em]
   {description}
 </p>
 
-
             </div>
+            </Reveal>
 
 
           </Container>

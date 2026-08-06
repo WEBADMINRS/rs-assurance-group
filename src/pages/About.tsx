@@ -2,6 +2,7 @@ import Page from "../components/layout/Page";
 import Founder from "../components/about/Founder";
 import Philosophy from "../components/about/Philosophy";
 
+
 export default function About() {
   return (
     <Page

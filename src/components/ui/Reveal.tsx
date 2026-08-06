@@ -14,7 +14,7 @@ export default function Reveal({
     <motion.div
       initial={{
         opacity: 0,
-        y: 20,
+        y: 80,
       }}
       whileInView={{
         opacity: 1,
@@ -25,7 +25,7 @@ export default function Reveal({
         amount: 0.15,
       }}
       transition={{
-        duration: 0.8,
+        duration: 2,
         delay,
         ease: [0.22, 1, 0.36, 1],
       }}
